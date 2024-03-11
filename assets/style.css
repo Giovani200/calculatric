@@ -1,0 +1,67 @@
+ @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+ 
+ 
+
+ *, ::after, ::before {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'poppins', sans-serif;
+ }
+
+
+ .container{
+    width: 100%;
+    height: 100vh; /* pour centrer ce la hauteur le heigth est en 100vh */
+    background: rgb(164, 164, 198);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+ }
+ /* mise de la calculatrice */
+ .calculator{
+   background: rgb(121, 121, 146);
+   padding: 20px;
+   border-radius: 5px;
+ }
+
+ /* mise en forme des boutton */
+ .calculator form input{
+   border: 0;
+   outline: 0;
+   width: 60px;
+   height: 60px;
+   border-radius: 10px;
+   box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5);
+   background: transparent;
+   font-size: 20px;
+   color: rgb(255, 255, 255);
+   cursor: pointer;
+   margin: 8px;
+ }
+
+ /* ecran de la calculatrice */
+ form .display{
+display: flex;
+justify-content: flex-end;
+margin: 20px 0;
+ }
+
+ form .display input{
+   text-align: right;
+   flex: 1;
+   font-size: 30px;
+   /* box-shadow: none; */
+ }
+
+ /* button egalité configuration  */
+form input.equal{
+width: 145px;
+}
+
+form input.operator{
+   color: aquamarine;
+}
+form input.operator1{
+   color: rgb(255, 18, 37);
+}
